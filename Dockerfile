@@ -3,7 +3,7 @@ FROM nginx:alpine
 LABEL maintainer="relief melone, relief.melone@gmail.com"
 
 RUN apk update && \
-    apk add nodejs npm python3 make curl g++
+    apk add nodejs npm python2 make curl g++
 
 COPY ./nginx/nginx.conf /etc/nginx/nginx.conf
 COPY ./nginx/default.conf /etc/nginx/conf.d/default.conf
